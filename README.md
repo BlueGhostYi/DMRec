@@ -23,7 +23,7 @@ yaml == 0.2.5
 We adopt three widely used recommendation datasets: Amazon-Book, Yelp, and Steam used in previous work. DMRec is a recommendation framework, which means you need to first define the base model to be run, and then select three matching strategies (GODM, CPDM, and MDDM). The following are examples of runs on three datasets:
 
 - Global Optimality for Distribution Matching:
-- 
+
   `python train_encoder.py --model {model_name}_godm --dataset {dataset} --cuda 0`
   
 - Composite Prior for Distribution Matching:
