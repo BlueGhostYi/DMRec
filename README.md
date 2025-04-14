@@ -13,7 +13,6 @@ This is the PyTorch implementation for our SIGIR 2025 paper:
 ```
 python == 3.8.18
 pytorch == 2.1.0 (cuda:12.1)
-torch-sparse == 0.6.18
 scipy == 1.10.1
 numpy == 1.24.3
 yaml == 0.2.5
