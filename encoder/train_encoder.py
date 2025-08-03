@@ -1,9 +1,16 @@
+"""
+PyTorch Implementation of DMRec
+Towards Distribution Matching between Collaborative and Language Spaces for Generative Recommendation  Zhang et al. SIGIR'25
+The recommendation framework adopted is mainly based on https://github.com/HKUDS/RLMRec
+"""
+
 from config.configurator import configs
 from trainer.trainer import init_seed
 from models.bulid_model import build_model
 from trainer.logger import Logger
 from data_utils.build_data_handler import build_data_handler
 from trainer.build_trainer import build_trainer
+
 
 def main():
     # First Step: Create data_handler
@@ -23,6 +30,6 @@ def main():
     # Fifth Step: training
     trainer.train(model)
 
-main()
 
-
+if __name__ == '__main__':
+    main()
