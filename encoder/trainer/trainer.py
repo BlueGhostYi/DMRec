@@ -44,6 +44,7 @@ class Trainer(object):
     def train_epoch(self, model, epoch_idx):
 
         global update_counts
+        update_counts = 0
 
         train_list = list(range(configs['data']['user_num']))
         np.random.shuffle(train_list)
